@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio | Hangyul Yi</title>
+
+   <!-- icons -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/barryscript.js" defer></script>
+</head>
+
+<body>
+
+   <!-- Header -->
+   <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+         <a href="#home" class="active">Home</a>
+         <a href="#about">About</a>
+         <a href="#projects">Projects</a>
+         <a href="#contact">Contact</a>
+      </nav>
+   </header>
+   
+   <!-- Home section -->
+   <section class="home" id="home">
+      <div class="home-content">
+         <h3>Hi there! I'm</h3>
+         <h1>Hangyul Yi</h1>
+         <h3>and I'm a <span id="multiple-text"></span></h3>
+         <p>I like to build things and hope they work. One of those things being this page!</p>
+         <div class="social-media">
+            <a href="https://www.linkedin.com/in/yihangyul/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <!-- <a href="#"><i class='bx bxl-instagram'></i></a> -->
+            <a href="https://github.com/hangyulyi" target="_blank"><i class='bx bxl-github'></i></a>
+            <!-- <a href="#"></a> -->
+         </div>
+         <!-- TODO: Input cute image maybe otter floating -->
+         <a href="images/Hangyul_Yi_Resume.pdf" target="_blank" class="btn">Check out my resume!</a>
+      </div>
+
+      <div class="home-img">
+         <img src="images/tempimage.png" alt="">
+      </div>
+   </section>
+
+   <!-- About section -->
+   <section class="about" id="about">
+      <div class="about-img">
+         <img src="" alt="">
+      </div>
+
+      <div class="about-content">
+         <h2 class="heading">About <span>Me</span></h2>
+         <h3>Software Engineering student</h3>
+         <p>I'm currently a Software Engineering student studying at the University of Calgary.</p>
+         <p>I love working on projects and improving my skills not only in class but outside as well. My current project I'm working on is Barry, a chatbot that I'm trying to teach. If I've been able to get it to have satisfactory results, you'll be able to check it out on this site! If you don't see it, it means it's still in the works.</p>
+         <p>Feel free to check out some of my other projects in the next section though!</p>
+         <!-- <a href="#" class="btn">Read more</a> -->
+      </div>
+   </section>
+
+   <!-- Projects section -->
+   <section class="projects" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="projects-container">
+         <div class="projects-box">
+            <img src="images/Screenshot 2023-12-06 at 6.30.13 PM.png" alt="">
+            <div class="projects-layer">
+               <h4>Flower Image Classifier</h4>
+               <p>Train an image classifer to recognize different species of flowers</p>
+               <a href="https://github.com/hangyulyi/Image-Classifier" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>  
+         <div class="projects-box">
+            <img src="images/Screenshot 2023-12-08 at 3.57.36 PM.png" alt="">
+            <div class="projects-layer">
+               <h4>Barry</h4>
+               <p>Try talking to Barry with the button on the bottom right!</p>
+               <!-- <a href="#"><i class='bx bx-link-external'></i></a>
+            </div> -->
+         </div>
+         <div class="projects-box">
+            <img src="" alt="">
+            <div class="projects-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nesciunt.</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="projects-box">
+            <img src="" alt="">
+            <div class="projects-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nesciunt.</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="projects-box">
+            <img src="" alt="">
+            <div class="projects-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nesciunt.</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="projects-box">
+            <img src="" alt="">
+            <div class="projects-layer">
+               <h4>Web Design</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nesciunt.</p>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div>    
+      </div>
+   </section>
+
+   <!-- Contact section -->
+   <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>me</span></h2>
+
+      <form action="#">
+         <div class="input-box">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+         </div>
+         <div class="input-box">
+            <input type="text" placeholder="Phone number">
+            <input type="text" placeholder="Email Subject">
+         </div>
+         <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+         <input type="submit" value="Send message" class="btn">
+      </form>
+   </section>
+
+
+
+   <!-- Barry Section -->
+   <div>
+      <button class="barry-toggler">
+         <i class='bx bx-message-dots' ></i>
+         <i class='bx bx-x'></i>
+      </button>
+      <div class="chatbot">
+         <header>
+            <h2>Barry</h2>
+            <i class='close-btn bx bx-x'></i>
+         </header>
+         <ul class="chatbox">
+            <li class="chat barry">
+               <i class='bx bx-dice-2'></i>
+               <p>Heyo, I'm Barry &#128075
+                  <br>I'm still in the works, check me out sometime later in the future!
+            </li>
+         </ul>
+         <div class="chat-input">
+            <textarea placeholder="Talk to Barry!" required></textarea>
+            <i class='bx bx-send'></i>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- Footer section -->
+   <footer class="footer">
+      <div class="footer-iconTop">
+         <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+      </div>
+      <div class="footer-text">
+         <p>Copyright &copy; 2023 by Hangyul Yi</p>
+      </div>
+   </footer>
+
+   <!-- ScrollRevealJS -->
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <!-- typed js -->
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+   <script src="js/script.js"></script>
+
+
+</body>
+</html>
