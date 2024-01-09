@@ -62,7 +62,7 @@ const handleChat = () => {
 
    // give barry thinking time
    setTimeout(() => {
-      const incomingChatLI = createChatLi("Barry thinking...", "barry");
+      const incomingChatLI = createChatLi("Barry is still in the works, sorry!", "barry");
       chatbox.appendChild(incomingChatLI);
       chatbox.scrollTo(0, chatbox.scrollHeight);
       generateResponse(incomingChatLI);
