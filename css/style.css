@@ -661,3 +661,12 @@ span {
       display: block;
    }
 }
+
+#msg-status {
+   color: #61b752;
+   margin-top: -20px;
+   align-self: center;
+   justify-content: center;
+   display: flex;
+   font-size: 16px;
+}

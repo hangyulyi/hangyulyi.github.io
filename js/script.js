@@ -28,6 +28,25 @@ window.addEventListener('scroll', () => {
    })
 })
 
+/* CONTACT ME TO GOOGLE SHEET */
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzoRiz0y0hXmu4EGAA3zh2Pwzf4kTT8Mq76piK_i95Z23VqdrmItX_EITZPQFP9esgQpQ/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg-status")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "Message sent!"
+      setTimeout(function(){
+         msg.innerHTML = ""
+      },5000)
+      form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+
+
 // typed JS
 var typed = new Typed('#multiple-text', {
    strings: ['Developer', 'Student', 'Enthusiast', 'Engineer', 'Explorer'],
