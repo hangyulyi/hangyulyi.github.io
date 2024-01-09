@@ -69,11 +69,11 @@ section {
 .navbar a::after {
    content: '';
    width: 0;
-   height: 5px;
+   height: 3px;
    background: var(--primary);
    position: absolute;
    left: 0;
-   bottom: 0.5px;
+   bottom: -5px;
    transition: 0.5s;
    display: block;
    opacity: 0.8;
