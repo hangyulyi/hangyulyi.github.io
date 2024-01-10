@@ -49,7 +49,7 @@ form.addEventListener('submit', e => {
 
 // typed JS
 var typed = new Typed('#multiple-text', {
-   strings: ['Developer', 'Student', 'Enthusiast', 'Engineer', 'Explorer'],
+   strings: ['Developer', 'Student', 'Programmer', 'Creator', 'Problem-solver'],
    typeSpeed: 100,
    backSpeed: 50,
    loop: true
