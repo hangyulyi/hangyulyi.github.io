@@ -151,17 +151,48 @@ span {
    width: 4rem;
    height: 4rem;
    background: transparent;
-   border: .2rem solid var(--accent);
+   /* border: .2rem solid var(--accent); */
    border-radius: 50%;
    font-size: 2rem;
-   color: var(--accent);
+   /* color: var(--accent); */
    margin: 3rem 1.5rem 3rem 0;
    transition: .5s ease;
 }
 
-.social-media a:hover {
-   background-color: var(--accent);
+.social-media a .bxl-linkedin:hover {
+   background-color: #0077B5;
    color: var(--background);
+}
+
+.social-media a .bxl-linkedin {
+   border: .2rem solid #0077B5;
+   color: #0077B5;
+   border-radius: 50%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 4rem;
+   height: 4rem;
+   background: transparent;
+   transition: .5s ease;
+}
+
+.social-media a .bxl-github:hover {
+   background-color: #000;
+   color: var(--background);
+}
+
+.social-media a .bxl-github {
+   border: .2rem solid #000;
+   color: #000;
+   border-radius: 50%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 4rem;
+   height: 4rem;
+   background: transparent;
+   transition: .5s ease;
 }
 
 .btn {
