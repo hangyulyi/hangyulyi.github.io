@@ -15,8 +15,8 @@ Some neat little features in the website consists of the following:
 
 - Change header "Portfolio" to a logo(create this)
 - Find a font that looks nice (please will the font gods bless me with a prophecy)
-- Figure out colour palette
-- Edit typed.js format so it looks cool (maybe typing being done on a monitor pew pew)
+- ~~Figure out colour palette~~ Kind of done? maybe, still keep an eye out
+- Edit typed.js format so it looks cool (maybe typing being done on a monitor pew pew) (link this with the idea from above so it doesn't look so out of place)
 - adjust margin and padding on some sections, looks interesting
 - fix navbar for small screens (the indicator part)
 - Does the indicator look good? maybe bold instead to indicate? idk
