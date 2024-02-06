@@ -125,12 +125,12 @@ span {
 }
 
 .home-img img {
-   width: 35vw;
+   width: 20vw;
    border-radius: 20px;
-   animation: floatImage 4s ease-in-out infinite;
+   margin-bottom: 40%;
 }
 
-@keyframes floatImage {
+/* @keyframes floatImage {
    0% {
       transform: translateY(0);
    }
@@ -142,7 +142,7 @@ span {
    100% {
       transform: translateY();
    }
-}
+} */
 
 .social-media a {
    display: inline-flex;
@@ -151,10 +151,9 @@ span {
    width: 4rem;
    height: 4rem;
    background: transparent;
-   /* border: .2rem solid var(--accent); */
+
    border-radius: 50%;
    font-size: 2rem;
-   /* color: var(--accent); */
    margin: 3rem 1.5rem 3rem 0;
    transition: .5s ease;
 }
@@ -194,6 +193,7 @@ span {
    background: transparent;
    transition: .5s ease;
 }
+
 
 .btn {
    display: inline-block;
