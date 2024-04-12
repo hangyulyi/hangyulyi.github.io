@@ -20,4 +20,5 @@ Some neat little features in the website consists of the following:
 - adjust margin and padding on some sections, looks interesting
 - fix navbar for small screens (the indicator part)
 - Does the indicator look good? maybe bold instead to indicate? idk
+- make new theme (darker with simple tones)
 
