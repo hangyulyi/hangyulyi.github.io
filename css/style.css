@@ -236,9 +236,16 @@ span {
    width: 35vw;
 }
 
-.heading {
+.contact-heading {
    text-align: center;
+}
+
+.heading {
    font-size: 4.5rem;
+}
+
+.contact-heading p {
+   font-size: 1.5rem;
 }
 
 .about-content h2 {
