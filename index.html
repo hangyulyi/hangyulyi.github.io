@@ -18,7 +18,6 @@
 
    <!-- Header -->
    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
 
       <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -72,23 +71,39 @@
    <section class="projects" id="projects">
       <h2 class="heading">Latest <span>Projects</span></h2>
 
+      <div class="filter-buttons">
+         <button class="filter-btn" data-tag="all">All</button>
+         <button class="filter-btn" data-tag="Python">Python</button>
+         <button class="filter-btn" data-tag="Java">Java</button>
+         <button class="filter-btn" data-tag="React">React</button>
+      </div>
+
       <div class="projects-container">
-         <div class="projects-box">
-            <img src="images/Screenshot 2023-12-06 at 6.30.13 PM.png" alt="">
-            <div class="projects-layer">
-               <h4>Flower Image Classifier</h4>
-               <p>Train an image classifer to recognize different species of flowers</p>
-               <a href="https://github.com/hangyulyi/Image-Classifier" target="_blank"><i class='bx bx-link-external'></i></a>
+
+
+         <div class="projects-box-container">
+            <div class="projects-box">
+               <img src="images/Screenshot 2023-12-06 at 6.30.13 PM.png" alt="">
+               <div class="projects-layer">
+                  <h4>Flower Image Classifier</h4>
+                  <p>Train an image classifer to recognize different species of flowers</p>
+                  <a href="https://github.com/hangyulyi/Image-Classifier" target="_blank"><i class='bx bx-link-external'></i></a>
+               </div>
+            </div> 
+            <div class="projects-tags">
+               <span class="tag">Python</span>
+               <span class="tag">TensorFlow</span>
+               <span class="tag">Machine Learning</span>
             </div>
-         </div>  
-         <div class="projects-box">
+         </div> 
+         <!-- <div class="projects-box">
             <img src="images/Screenshot 2023-12-08 at 3.57.36 PM.png" alt="">
             <div class="projects-layer">
                <h4>Barry</h4>
                <p>Try talking to Barry with the button on the bottom right!</p>
-               <!-- <a href="#"><i class='bx bx-link-external'></i></a>
-            </div> -->
-         </div>
+               <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+         </div> -->
          <div class="projects-box">
             <img src="" alt="">
             <div class="projects-layer">
@@ -127,7 +142,6 @@
    <!-- Contact section -->
    <section class="contact" id="contact">
       <h2 class="heading">Contact <span>me</span></h2>
-
       <form name="submit-to-google-sheet">
          <div class="input-box">
             <input type="text" name="Name" placeholder="Name" required>
@@ -150,7 +164,7 @@
     </script>
 
    <!-- Barry Section -->
-   <div>
+   <!-- <div>
       <button class="barry-toggler">
          <i class='bx bx-message-dots' ></i>
          <i class='bx bx-x'></i>
@@ -172,18 +186,19 @@
             <i class='bx bx-send'></i>
          </div>
       </div>
-   </div>
+   </div> -->
 
 
 
    <!-- Footer section -->
    <footer class="footer">
-      <div class="footer-iconTop">
-         <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-      </div>
       <div class="footer-text">
          <p>Copyright &copy; 2023 by Hangyul Yi</p>
       </div>
+      <div class="footer-iconTop">
+         <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+      </div>
+      
    </footer>
 
    <!-- ScrollRevealJS -->

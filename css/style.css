@@ -12,12 +12,24 @@
 }
 
 :root {
-   --text: #0b0f19;
+   /* --text: #0b0f19;
    --background: #f8f8f8;
    --primary: #82a7f8;
    --secondary: #d1daeb;
    --accent: #4766a9;
-   --footer: #e5e5e5;
+   --footer: #e5e5e5; */
+
+   --text: #e3e9ed;
+   --background: #050709;
+   --primary: #acc1d0;
+   --secondary: #1b1f24;
+   --accent: #2f5976;
+   /* 2f5976 */
+   /* --text: #e3e9ed;
+   --background: #050709;
+   --primary: #acc1d0;
+   --secondary: #1b1f24;
+   --accent: #4d97cc; */
 }
 
 html {
@@ -40,10 +52,10 @@ section {
    top: 0;
    left: 0;
    width: 100%;
-   padding: 2rem 9%;
+   padding: 4rem 9%;
    background: var(--background);
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    z-index: 100;
 }
@@ -60,7 +72,7 @@ section {
 }
 
 .navbar a {
-   font-size: 1.7rem;
+   font-size: 2rem;
    color: var(--text);
    margin: 0 2rem;
    position: relative;
@@ -177,13 +189,13 @@ span {
 }
 
 .social-media a .bxl-github:hover {
-   background-color: #000;
+   background-color: #fff;
    color: var(--background);
 }
 
 .social-media a .bxl-github {
-   border: .2rem solid #000;
-   color: #000;
+   border: .2rem solid #fff;
+   color: #fff;
    border-radius: 50%;
    display: inline-flex;
    justify-content: center;
@@ -265,6 +277,11 @@ span {
    border-radius: 2rem;
    overflow: hidden;
    display: flex;
+   flex-direction: column;
+}
+
+.projects-box-container {
+   flex-direction: column;
 }
 
 .projects-box img {
@@ -277,7 +294,7 @@ span {
    left: 0;
    width: 100%;
    height: 100%;
-   background: linear-gradient(to top, rgba(0, 0, 0, .3), var(--accent));
+   background: linear-gradient(to top, rgba(0, 0, 0, .4), var(--accent));
    display: flex;
    justify-content: center;
    align-items: center;
@@ -294,13 +311,13 @@ span {
 
 .projects-layer h4 {
    font-size: 3rem;
-   color: var(--background);
+   color: var(--text);
 }
 
 .projects-layer p {
    font-size: 1.6rem;
    margin: .3rem 0 1rem;
-   color: var(--background);
+   color: var(--text);
 }
 
 .projects-layer a {
@@ -318,8 +335,47 @@ span {
    color: var(--text);
 }
 
+.projects-tags {
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.tag {
+   background: var(--accent);
+   color: var(--primary);
+   padding: 5px 10px;
+   border-radius: 20px;
+   font-size: 1.2em;
+}
+
+/* filter buttons in projects */
+.filter-buttons {
+   margin-bottom: 3rem;
+   display: flex;
+   gap: 10px;
+}
+
+.filter-btn {
+   padding: 10px 20px;
+   background: var(--primary);
+   color: var(--accent);
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.filter-btn:hover {
+   background: var(--accent);
+   color: var(--text);
+}
+
+
+
 /* Contact section */
 .contact h2 {
+   margin-top: 5rem;
    margin-bottom: 3rem;
 }
 

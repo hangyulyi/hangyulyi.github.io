@@ -28,6 +28,37 @@ window.addEventListener('scroll', () => {
    })
 })
 
+
+/* PROJECT FILTER BUTTONS */
+document.addEventListener('DOMContentLoaded', () => {
+   const filterButtons = document.querySelectorAll('.filter-btn')
+   const projectContainers = document.querySelectorAll('.projects-box-container')
+
+   filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+         const tag = button.getAttribute('data-tag')
+
+         projectContainers.forEach(container => {
+            const tags = container.querySelectorAll('.tag')
+            let match = tag === 'all'
+
+            tags.forEach(projectTag => {
+               if (projectTag.textContent === tag) {
+                  match = true;
+               }
+            })
+
+            if (match) {
+               container.style.display = 'flex'
+            } else {
+               container.style.display = 'none'
+            }
+         })
+      })
+   })
+})
+
+
 /* CONTACT ME TO GOOGLE SHEET */
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzoRiz0y0hXmu4EGAA3zh2Pwzf4kTT8Mq76piK_i95Z23VqdrmItX_EITZPQFP9esgQpQ/exec'
 const form = document.forms['submit-to-google-sheet']
@@ -63,5 +94,5 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.projects-box', { origin: 'bottom' });
+ScrollReveal().reveal('.projects-box-container', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1', { origin: 'left' });
