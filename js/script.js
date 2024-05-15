@@ -95,4 +95,4 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.projects-box-container', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.home-content h1, .projects h2', { origin: 'left' });
