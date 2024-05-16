@@ -145,7 +145,7 @@ span {
 
 .home-gif {
    display: inline-block;
-   cursor: pointer;
+   /* cursor: pointer; */
    margin-left: 5rem;
 }
 
