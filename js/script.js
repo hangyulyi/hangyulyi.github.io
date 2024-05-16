@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
       button.addEventListener('click', () => {
          const tag = button.getAttribute('data-tag')
 
+         // update active class for button
+         filterButtons.forEach( btn => {
+            btn.classList.remove('active');
+         })
+         button.classList.add('active')
+
          projectContainers.forEach(container => {
             const tags = container.querySelectorAll('.tag')
             let match = tag === 'all'
