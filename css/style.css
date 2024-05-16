@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Outfit');
+/* Manrope, Ubranist, Rubik */
 
 * {
    margin: 0;
@@ -8,7 +9,7 @@
    border: none;
    outline: none;
    scroll-behavior: smooth;
-   font-family: 'Rubik', sans-serif;
+   font-family: 'Outfit', sans-serif;
 }
 
 :root {
