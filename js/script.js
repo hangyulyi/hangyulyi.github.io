@@ -78,6 +78,24 @@ form.addEventListener('submit', e => {
 })
 
 
+/* PNG click play GIF */
+document.addEventListener('DOMContentLoaded', function () {
+   const gifImage = document.getElementById('gifImage')
+   const gifSrc = 'images/020.gif';
+   const staticSrc = 'images/1.png';
+   const gifDuration = 2500;
+
+   gifImage.addEventListener('click', function () {
+      if (gifImage.src.includes(staticSrc)) {
+         gifImage.src = gifSrc;
+         setTimeout(function () {
+            gifImage.src = staticSrc;
+         }, gifDuration)
+      }
+   })
+})
+
+
 // typed JS
 var typed = new Typed('#multiple-text', {
    strings: ['Developer', 'Student', 'Programmer', 'Creator', 'Problem-solver'],

@@ -143,6 +143,23 @@ span {
    margin-bottom: 50%;
 }
 
+.home-gif {
+   display: inline-block;
+   cursor: pointer;
+   margin-left: 5rem;
+}
+
+.home-gif img {
+   width: 10rem;
+   height: auto;
+}
+
+.inline-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 /* @keyframes floatImage {
    0% {
       transform: translateY(0);
