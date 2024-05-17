@@ -89,13 +89,14 @@ document.addEventListener('DOMContentLoaded', function () {
    const gifImage = document.getElementById('gifImage')
    const gifSrc = 'images/020.gif';
    const staticSrc = 'images/1.png';
-   const gifDuration = 2500;
+   const endSrc = 'images/2.png';
+   const gifDuration = 1600;
 
    gifImage.addEventListener('click', function () {
       if (gifImage.src.includes(staticSrc)) {
          gifImage.src = gifSrc;
          setTimeout(function () {
-            gifImage.src = staticSrc;
+            gifImage.src = endSrc;
          }, gifDuration)
       }
    })
