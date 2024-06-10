@@ -7,6 +7,27 @@ menuIcon.addEventListener('click', () =>  {
    navbar.classList.toggle('active');
 })
 
+// NAVIGATION HANDLING
+document.addEventListener('DOMContentLoaded', () => {
+   const navbarLinks = document.querySelectorAll('.navbar a')
+
+   navbarLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+         e.preventDefault();
+         const targetId = e.target.getAttribute('data-scroll')
+         const targetElement = document.getElementById(targetId)
+
+         if (targetElement) {
+            window.scrollTo({
+               top: targetElement.offsetTop,
+               behavior: 'smooth'
+            })
+         }
+      })
+   })
+})
+
+
 // navbar active
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
