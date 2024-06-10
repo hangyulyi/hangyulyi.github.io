@@ -43,8 +43,10 @@ window.addEventListener('scroll', () => {
       if(scrollY >= offset && scrollY < offset + height) {
          navLinks.forEach(link => {
             link.classList.remove('active');
+            if (link.getAttribute('data-scroll') === id) {
+               link.classList.add('active')
+            }
          })
-         document.querySelector('header nav a[href="#' + id +  '"]').classList.add('active');
       }
    })
 })
