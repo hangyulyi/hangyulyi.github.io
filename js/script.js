@@ -52,6 +52,13 @@ window.addEventListener('scroll', () => {
 })
 
 
+/* topBtn scroll to top of the screen */
+function topFunction() {
+   document.body.scrollTop = 0; // safari
+   document.documentElement.scrollTop = 0; // etc browsers
+}
+
+
 /* PROJECT FILTER BUTTONS */
 document.addEventListener('DOMContentLoaded', () => {
    const filterButtons = document.querySelectorAll('.filter-btn')

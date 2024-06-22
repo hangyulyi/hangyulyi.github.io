@@ -456,7 +456,7 @@ span {
    font-size: 1.2rem;
 }
 
-.footer-iconTop a {
+.footer-iconTop button {
    display: inline-flex;
    justify-content: center;
    align-items: center;
@@ -466,11 +466,11 @@ span {
    transition: transform 0.2s;
 }
 
-.footer-iconTop a:hover  {
+.footer-iconTop button:hover  {
    transform: scale(1.1);
 }
 
-.footer-iconTop a i {
+.footer-iconTop button i {
    font-size: 2.4rem;
    color: var(--background);
 }
